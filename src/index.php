@@ -25,7 +25,7 @@ if (WebPage::isFormPosted()) {
     $engine->dbsync();
     $_SESSION['current_hall'] = $engine->getMyKey();
 
-    tep_redirect('hall.php?id=' . $engine->getMyKey());
+    $oPage->redirect('hall.php?id=' . $engine->getMyKey());
     exit;
 } else {
     $engine = new Hall(is_null($hallId) ? (array_key_exists('current_hall', $_SESSION) ? $_SESSION['current_hall'] : null ) : $hallId);

@@ -29,7 +29,7 @@ $delSegment = WebPage::getRequestValue('del_segment');
 
 if ($addSegment) {
     if ($haller->addSegment($addSegment)) {
-        tep_redirect('hall.php?id=' . $hallId);
+    $oPage->redirect('hall.php?id=' . $hallId);
         exit();
     }
 }
