@@ -1,0 +1,30 @@
+{
+    "name": "purehtml/ce-phoenix-qrscan",
+    "description": "QRCode scanner to CE-Phoenix bridge",
+    "type": "project",
+    "require": {
+        "chillerlan/php-qrcode": "^4.3",
+        "vitexsoftware/ease-fluentpdo": "^1.0",
+        "vitexsoftware/ease-twbootstrap4": "^1.1"
+    },
+    "require-dev": {
+        "ext-gd": "*",
+        "phpunit/phpunit": "^9.5"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Vítězslav Dvořák",
+            "email": "info@vitexsoftware.cz"
+        }
+    ],
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "QRScan\\": "src/QRScan/",
+            "QRScan\\Ui\\": "src/QRScan/Ui/",
+            "PureOSC\\": "src/PureOSC/",
+            "PureOSC\\Ui\\": "src/PureOSC/ui/"
+        }
+    }
+}
